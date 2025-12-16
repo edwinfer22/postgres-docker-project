@@ -1,0 +1,15 @@
+# Docker volumes
+postgres_data/
+
+# pgAdmin data (if any was created)
+pgadmin_data/
+
+# Environment variables
+.env
+
+# Common ignore patterns (optional)
+# .DS_Store
+# .envrc
+# .idea/
+# .vscode/
+# *.log

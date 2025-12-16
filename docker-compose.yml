@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13-alpine # Una versión ligera de PostgreSQL
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydatabase
+    ports:
+      - "5432:5432" # Mapea el puerto de PostgreSQL (5432) de tu máquina al contenedor
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # Para que tus datos sean persistentes
+    networks:
+      - postgres-net
+
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80" # Mapea el puerto 5050 de tu máquina al puerto 80 del contenedor de pgAdmin
+    depends_on:
+      - db
+    networks:
+      - postgres-net
+
+volumes:
+  postgres_data:
+
+networks:
+  postgres-net:
