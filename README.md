@@ -53,7 +53,7 @@ Aquí tienes algunas capturas de pantalla del proceso:
 ![Pantalla de Ingreso con Usuario y Contraseña](images/posgres1.jpg)
 *Pantalla de ingreso con usuario y contraseña.*
 
-![Vista del Menú Principal](images/posgre2.jpg)
+![Vista del Menú Principal](images/posgres2.jpg)
 *Vista del menú principal.*
 
 ## Stopping the Services
