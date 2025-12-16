@@ -46,6 +46,16 @@ docker exec -it postgres-docker-project-db-1 psql -U user mydatabase
         *   **Password:** `password`
     *   Click "Save".
 
+### Ejemplos Visuales
+
+Aquí tienes algunas capturas de pantalla del proceso:
+
+![Pantalla de Ingreso con Usuario y Contraseña](images/posgres1.jpg)
+*Pantalla de ingreso con usuario y contraseña.*
+
+![Vista del Menú Principal](images/posgre2.jpg)
+*Vista del menú principal.*
+
 ## Stopping the Services
 
 To stop and remove the containers (your data will be preserved in the `postgres_data` volume):
